@@ -1,4 +1,3 @@
-// lib/services/github_service.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/github_user.dart';
@@ -8,7 +7,7 @@ import '../models/commit.dart';
 class GitHubService {
   static const String baseUrl = 'https://api.github.com';
   
-  // Store token securely - Token should be in .env file
+
   static const String _token = String.fromEnvironment('GITHUB_TOKEN', defaultValue: '');
 
   Map<String, String> get headers => {
